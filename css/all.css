@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family:arial,'Noto Sans TC','微軟正黑體', sans-serif;
+}
+ol, ul,li{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.wrap{
+    background:url(../images/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+}
+.header{
+
+}
+.title{
+    color:white;
+    text-align:center;
+    font-size: 40px;
+    letter-spacing: 3.89px;
+    padding-top: 89px;
+}
+.d-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.list{
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    width: 452px;
+    height: 48px;
+    margin-top: 46px;
+}
+.hotlist{
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    max-width: 800px;
+    height: 112px;
+    margin: 0 auto;
+    margin-top: 79px;
+    padding: 10px;
+}
+.hottitle{
+    font-size: 18px;
+    color: #000000;
+}
+.hotArea li{
+    float: left;
+    margin-right:20px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.clearfix{
+    clear: both;
+}
+.hotAreabox{
+    width: 130px;
+    height: 42px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+}
+.purple{
+    background: #8A82CC;
+}
+.pink{
+    background: #FFA782;
+}
+.yellow{
+    background:#F5D005;
+}
+.blue{
+    background: #559AC8;
+}
+.ico-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+.ico-down:after{
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 5px;
+  border: 1px dashed #559AC8;
+  z-index: -1;
+}
+/*i pad 768px*/
+@media(max-width:768px){
+    .hottitle{
+        font-size: 24px;
+    }
+    .hotlist{
+        max-width: 400px;
+        height: 180px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    .hotAreabox{
+        width: 120px;
+    }
+}
+/*i phone 6 7 8 plus*/
+@media(max-width:414px){
+    .wrap{
+      background: url(../images/the-urban-landscape-1698285.png);
+    }
+    .list{
+        width: 80%;
+    }
+    .hotlist{
+        max-width: 250px;
+        height: 300px;
+    }
+    .hotlist li{
+        float: none;
+        margin-right: 40px;
+    }
+}
+.content{
+    padding: 20px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.areaTitle{
+    margin-top: 20px;
+    font-size: 36px;
+    color: #8A82CC;
+    text-align:center;
+}
+.placeName{
+    font-size: 24px;
+}
+.card{
+    width: 464px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    margin: 10px;
+}
+.cardimg{
+    background: url(https://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    color:white;
+    height: 155px;
+    width: 100%;
+}
+.justify-content-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+.card-body{
+    line-height: 2;
+    padding-left: 20px;
+    padding: 10px;
+    height: 100%;
+}
+.card-body li img{
+    margin-right: 10px;
+}
+.about{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer{
+    padding: 10px;
+    margin-top: 40px;
+    background: #559AC8;
+    line-height: 2;
+    text-align:center;
+}
